@@ -16,7 +16,7 @@ interface AddPlayer {
   providedIn: 'root'
 })
 export class PlayersService {
-  baseUrl = 'http://localhost:3000/api';
+  baseUrl = 'http://localhost:62001/api';
 
   constructor(private http: HttpClient) { }
 

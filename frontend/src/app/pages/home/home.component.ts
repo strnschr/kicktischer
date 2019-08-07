@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PlayersService } from '../../services/players.service';
 import { Player } from 'src/app/models/Player';
 import { CookieService } from 'ngx-cookie-service';
-import {MatDialog, MatDialogRef} from '@angular/material/dialog';
+import {MatDialog} from '@angular/material/dialog';
 import * as moment from 'moment';
 import * as webNotification from 'simple-web-notification';
 import { interval, Subscription } from 'rxjs';
