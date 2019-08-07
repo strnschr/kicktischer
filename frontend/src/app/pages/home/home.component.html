@@ -1,9 +1,8 @@
-<h2 *ngIf="!activePlayers">Loading active players...</h2>
-
-<mat-card *ngIf="activePlayers">
+<mat-card>
     <h3 class="mat-h3" *ngIf="activePlayers">Players waiting: {{activePlayers.length}}</h3>
+    <h3 class="mat-h3" *ngIf="!activePlayers">Loading active players...</h3>
 
-    <mat-list *ngIf="activePlayers.length > 0">
+    <mat-list *ngIf="activePlayers && activePlayers.length > 0">
         <mat-divider></mat-divider>
         <mat-list-item *ngFor="let player of activePlayers">
             <mat-icon class="row-icon">account_circle</mat-icon>
